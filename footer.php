@@ -54,12 +54,9 @@
 				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 				<?php
 				if ( function_exists( 'the_privacy_policy_link' ) ) {
-					the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
+					the_privacy_policy_link( '', '' );
 				}
 				?>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>" class="imprint">
-					<?php printf( __( 'Proudly powered by %s', 'twentysixteen' ), 'WordPress' ); ?>
-				</a>
 			</div><!-- .site-info -->
 		</footer><!-- .site-footer -->
 	</div><!-- .site-inner -->
@@ -67,20 +64,22 @@
 
 <?php wp_footer(); ?>
 
-<script>
-var main = jQuery('#main')
+<div id="context-menu" style="visibility:hidden">
+	<div id="aplayer">
+	</div>
+	<a class="context-menu-item" href="javascript:void(0)">
+		Close
+	</a>
+	<a class="context-menu-item" href="#">
+		Top
+	</a>
+	<a class="context-menu-item">
+		Copy
+	</a>
+</div>
+<div id="aplayer-lrc">
+</div>
 
-jQuery(document)
-    .pjax('a', '#main', { fragment: '#main', timeout: 6000 })
-    .on('pjax:send', () => {
-        main.addClass('pjax-loading')
-        NProgress.start()
-    })
-    .on('pjax:complete', () => {
-        main.removeClass('pjax-loading')
-        NProgress.done()
-        Prism.highlightAll()
-    })
-</script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/js/init.js'; ?>"></script>
 </body>
 </html>

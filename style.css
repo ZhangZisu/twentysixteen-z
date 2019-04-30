@@ -289,7 +289,7 @@ input, button, textarea {
 	font-variant: normal;
 	font-weight: normal;
 	line-height: 1;
-	speak: none;
+	speak-as: none;
 	text-align: center;
 	text-decoration: inherit;
 	text-transform: none;
@@ -624,14 +624,6 @@ input[type="submit"]:focus {
 	background: #007acc;
 }
 
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus {
-	outline: thin dotted;
-	outline-offset: -4px;
-}
-
 input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
@@ -758,14 +750,6 @@ a:focus,
 a:active {
 	color: #686868;
 	border: 1px dashed;
-}
-
-a:focus {
-	outline: thin dotted;
-}
-
-a:hover,
-a:active {
 	outline: 0;
 }
 
@@ -838,7 +822,6 @@ a:active {
 	color: #1a1a1a;
 	display: block;
 	line-height: 1.3125;
-	outline-offset: -1px;
 	padding: 0.84375em 0;
 }
 
@@ -902,11 +885,6 @@ a:active {
 .dropdown-toggle:focus {
 	background-color: transparent;
 	color: #007acc;
-}
-
-.dropdown-toggle:focus {
-	outline: thin dotted;
-	outline-offset: -1px;
 }
 
 .dropdown-toggle:focus:after {
@@ -1682,10 +1660,6 @@ blockquote:after,
 
 .menu-toggle:focus {
 	outline: 0;
-}
-
-.menu-toggle.toggled-on:focus {
-	outline: thin dotted;
 }
 
 .header-image {
@@ -3047,7 +3021,6 @@ p > video {
 	}
 
 	.main-navigation a {
-		outline-offset: -8px;
 		padding: 0.65625em 0.875em;
 		white-space: nowrap;
 	}

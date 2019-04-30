@@ -68,9 +68,19 @@
 <?php wp_footer(); ?>
 
 <script>
-	jQuery(document).pjax("a", '#main', {fragment:'#main', timeout:6000});
-	jQuery(document).on('pjax:send', () => NProgress.start())
-    jQuery(document).on('pjax:complete', () => {NProgress.done();Prism.highlightAll()})
+var main = jQuery('#main')
+
+jQuery(document)
+    .pjax('a', '#main', { fragment: '#main', timeout: 6000 })
+    .on('pjax:send', () => {
+        main.addClass('pjax-loading')
+        NProgress.start()
+    })
+    .on('pjax:complete', () => {
+        main.removeClass('pjax-loading')
+        NProgress.done()
+        Prism.highlightAll()
+    })
 </script>
 </body>
 </html>

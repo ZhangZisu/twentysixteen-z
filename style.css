@@ -1581,6 +1581,7 @@ blockquote:after,
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	border-bottom: 5px solid;
 }
 
 .site-branding {

@@ -64,18 +64,11 @@
 
 <?php wp_footer(); ?>
 
-<div id="context-menu" style="visibility:hidden">
-	<div id="aplayer">
-	</div>
-	<a class="context-menu-item" href="javascript:void(0)">
-		Close
-	</a>
-	<a class="context-menu-item" href="#">
-		Top
-	</a>
-	<a class="context-menu-item">
-		Copy
-	</a>
+<div id="context-menu" style="visibility:hidden;left:0;top:0;">
+	<a class="context-menu-item" href="javascript:void(0)">Close</a>
+	<a class="context-menu-item" href="#">Top</a>
+	<a class="context-menu-item" href="javascript:document.execCommand('copy')">Copy</a>
+	<div id="aplayer"></div>
 </div>
 <div id="aplayer-lrc">
 </div>

@@ -5,7 +5,7 @@
  Author:       ZhangZisu
  Author URI:   https://zhangzisu.cn/
  Template:     twentysixteen
- Version:      1.0.0
+ Version:      1.0.1
  License:      MIT
  License URI:  https://opensource.org/licenses/MIT
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -1541,7 +1541,7 @@ blockquote:after,
 }
 
 .site:hover {
-	opacity: 0.85;
+	opacity: 1;
 }
 
 .site-inner {
@@ -1606,7 +1606,7 @@ blockquote:after,
 }
 
 .site-title {
-	font-family: monospace;
+	font-family: Inconsolata, monospace;
 	font-size: 2.5em;
 	font-weight: 700;
 	line-height: 1.2173913043;
@@ -1632,7 +1632,7 @@ blockquote:after,
 	font-weight: 400;
 	line-height: 1.0769230769;
 	margin: 0.538461538em 0 0;
-	font-family: monospace;
+	font-family: Inconsolata, monospace;
 	font-size: 1.2em;
 }
 

@@ -1,14 +1,5 @@
 <?php
 
-/**
- * Register Google fonts for Twenty Sixteen.
- *
- * Create your own twentysixteen_fonts_url() function to override in a child theme.
- *
- * @since Twenty Sixteen 1.0
- *
- * @return string Google fonts URL for the theme.
- */
 function twentysixteen_fonts_url() {
 	return 'https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans|Noto+Sans+SC';
 }
